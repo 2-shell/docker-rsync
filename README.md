@@ -21,7 +21,3 @@ docker run --rm -it -v /tmp/foo:/source:ro -v /tmp/bar:/destiation 2shell/rsync 
 docker run --rm -it -v $HOME/.ssh:/root/.ssh:ro -v /tmp/foo:/source:ro 2shell/rsync -rv /source/ user@host:/tmp/foo/
 ~~~
 
-## Issues
-
-We don't monitor comments on DockerHub. If you have any problems with or questions about this image, please contact us via GitHub issues.
-
