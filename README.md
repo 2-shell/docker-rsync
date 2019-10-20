@@ -12,13 +12,13 @@ This simple alpine based image simply contains **rsync** and the **openssh clien
 ### Simple synchronization of local directories
 
 ~~~bash
-docker run --rm -it -v /tmp/foo:/source:ro -v /tmp/bar:/destiation digitalmobil/rsync -rv /source/ /destiation/
+docker run --rm -it -v /tmp/foo:/source:ro -v /tmp/bar:/destiation 2shell/rsync -rv /source/ /destiation/
 ~~~
 
 ### Filetransfer via SSH
 
 ~~~bash
-docker run --rm -it -v $HOME/.ssh:/root/.ssh:ro -v /tmp/foo:/source:ro digitalmobil/rsync -rv /source/ user@host:/tmp/foo/
+docker run --rm -it -v $HOME/.ssh:/root/.ssh:ro -v /tmp/foo:/source:ro 2shell/rsync -rv /source/ user@host:/tmp/foo/
 ~~~
 
 ## Issues
